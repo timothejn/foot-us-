@@ -2,38 +2,604 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Football Américain France - D1 Elite & D2 Nationale</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encyclopédie NFL</title>
+    <style>
+        /* ===== Reset & Base ===== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #03202F; }
+        h1, h2, h3 { font-family: 'Arial Black', sans-serif; }
+        a { text-decoration: none; color: inherit; }
+
+        /* ===== Header ===== */
+        header {
+            background-color: #03202F;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header img { width: 200px; max-width: 80%; margin-bottom: 10px; }
+
+        /* ===== Container ===== */
+        .container { width: 95%; max-width: 1200px; margin: 20px auto; }
+
+        /* ===== Sections ===== */
+        section { margin-bottom: 50px; }
+        h2 { color: #d50a0a; margin-bottom: 15px; border-bottom: 2px solid #03202F; padding-bottom: 5px; }
+        h3 { color: #03202F; margin: 15px 0; }
+
+        /* ===== Tables ===== */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; text-align: center; }
+        thead { background-color: #03202F; color: #fff; }
+        tbody tr:nth-child(even) { background-color: #f4f4f4; }
+        tbody tr:hover { background-color: #d50a0a; color: #fff; transition: 0.3s; }
+        th { font-weight: bold; }
+
+        /* ===== Logos ===== */
+        .team-logo { width: 30px; vertical-align: middle; margin-right: 8px; }
+
+        /* ===== Calendrier ===== */
+        .match { font-weight: bold; }
+        .score { color: #d50a0a; font-weight: bold; }
+
+        /* ===== Images ===== */
+        .image-container img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-top: 15px; }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #03202F;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            th, td { font-size: 14px; padding: 8px; }
+            header img { width: 150px; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Football Américain France</h1>
-        <nav>
-            <a href="#accueil">Accueil</a>
-            <a href="#d1">D1 Elite</a>
-            <a href="#d2">D2 Nationale</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section id="accueil">
-            <h2>Bienvenue sur le site du football américain français</h2>
-            <p>
-                Retrouvez toutes les équipes, résultats, et actualités des championnats D1 Elite et D2 Nationale !
-            </p>
-        </section>
-        <section id="d1">
-            <h2>D1 Elite - Les équipes</h2>
-            <div class="teams">
-                <div class="team-card">
-                    <h3>La Courneuve Flash</h3>
-                    <p><strong>Ville :</strong> La Courneuve</p>
-                    <p><strong>Stade :</strong> Géo André</p>
-                    <p><strong>Couleurs :</strong> Noir & Jaune</p>
-                    <p>Équipe historique, multiple championne de France.</p>
-                    <a href="https://flashfootball.fr/" target="_blank">Site officiel</a>
-                </div>
-                <div class="team-card">
-                    <h3>Thonon Black Panthers</h3>
-                   
+
+<header>
+    <img src="nfl_logo.png" alt="NFL Logo">
+    <h1>Bienvenue sur l'Encyclopédie NFL</h1>
+</header>
+
+<div class="container">
+
+    <!-- Présentation de la ligue -->
+    <section id="presentation">
+        <h2>Présentation de la Ligue et des Conférences</h2>
+        <p>Bienvenue sur l'encyclopédie officielle de la NFL. Voici une présentation rapide de la ligue et de ses deux conférences.</p>
+      <section>
+  <h2>Présentation de la NFL</h2>
+  <p>La NFL (National Football League) est la ligue professionnelle de football américain aux États-Unis.</p>
+  <p>Chaque saison comprend 18 semaines de matchs réguliers, suivies des playoffs pour déterminer le champion.</p>
+  <p>Chaque équipe joue contre différentes équipes de sa conférence et de l'autre conférence.</p>
+  <p>Les matchs sont très suivis et culminent avec le Super Bowl, la finale la plus célèbre du football américain.</p>
+</section>
+        <h3>Les Conférences de la NFL</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Conférence</th>
+                    <th>Division</th>
+                    <th>Équipes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AFC</td>
+                    <td>Est, Nord, Sud, Ouest</td>
+                    <td>Liste des équipes de l'AFC...</td>
+                </tr>
+                <tr>
+                    <td>NFC</td>
+                    <td>Est, Nord, Sud, Ouest</td>
+                    <td>Liste des équipes de la NFC...</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Palmarès des clubs -->
+    <section id="historique-clubs">
+        <h2>Histoire des Clubs et Statistiques</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Équipe</th>
+                    <th>Victoires Super Bowl</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>New England Patriots</td><td>6</td></tr>
+                <tr><td>Pittsburgh Steelers</td><td>6</td></tr>
+                <tr><td>San Francisco 49ers</td><td>5</td></tr>
+                <tr><td>Dallas Cowboys</td><td>5</td></tr>
+                <tr><td>Green Bay Packers</td><td>4</td></tr>
+                <tr><td>New York Giants</td><td>4</td></tr>
+                <tr><td>Kansas City Chiefs</td><td>4</td></tr>
+                <tr><td>Denver Broncos</td><td>3</td></tr>
+                <tr><td>Las Vegas Raiders</td><td>3</td></tr>
+                <tr><td>Washington Commanders</td><td>3</td></tr>
+                <tr><td>Miami Dolphins</td><td>2</td></tr>
+                <tr><td>Los Angeles Rams</td><td>2</td></tr>
+                <tr><td>Baltimore Ravens</td><td>2</td></tr>
+                <tr><td>Tampa Bay Buccaneers</td><td>2</td></tr>
+                <tr><td>Philadelphia Eagles</td><td>1</td></tr>
+                <tr><td>Seattle Seahawks</td><td>1</td></tr>
+                <tr><td>New Orleans Saints</td><td>1</td></tr>
+                <tr><td>New York Jets</td><td>1</td></tr>
+                <tr><td>Chicago Bears</td><td>1</td></tr>
+                <tr><td>Indianapolis Colts</td><td>1</td></tr>
+                <tr><td>Buffalo Bills</td><td>0</td></tr>
+                <tr><td>Minnesota Vikings</td><td>0</td></tr>
+                <tr><td>Cincinnati Bengals</td><td>0</td></tr>
+                <tr><td>Arizona Cardinals</td><td>0</td></tr>
+                <tr><td>Los Angeles Chargers</td><td>0</td></tr>
+                <tr><td>Tennessee Titans</td><td>0</td></tr>
+                <tr><td>Atlanta Falcons</td><td>0</td></tr>
+                <tr><td>Carolina Panthers</td><td>0</td></tr>
+                <tr><td>Cleveland Browns</td><td>0</td></tr>
+                <tr><td>Detroit Lions</td><td>0</td></tr>
+                <tr><td>Houston Texans</td><td>0</td></tr>
+                <tr><td>Jacksonville Jaguars</td><td>0</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Calendrier -->
+    <section id="calendrier">
+        <h2>Calendrier des Matchs NFL Saison 2025-2026</h2>
+
+        <!-- ===========================
+     CALENDRIER NFL 2025 — SQUELETTE
+     Weeks 1 → 18
+=========================== -->
+
+<section id="calendrier">
+  <h2>Calendrier NFL 2025 (Weeks 1 → 18)</h2>
+
+  <!-- Loop Weeks 1 to 18 -->
+  <!-- Pour chaque Week, remplacer TEAM1 / TEAM2 / DATE par les vraies données, ajouter des lignes selon les matchs -->
+  
+  <!-- Week 1 -->
+   <h3>Week 1</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 4 Septembre</td><td>Ravens VS Chiefs</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Broncos VS Falcons</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Bengals VS Patriots</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Steelers VS Commanders</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Dolphins VS Bills</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Jets VS 49ers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Saints VS Panthers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Texans VS Colts</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Browns VS Jaguars</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Raiders VS Chargers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Seahawks VS Rams</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Buccaneers VS Saints</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Septembre</td><td>Cowboys VS Giants</td><td>À venir</td></tr>
+        <tr><td>Lundi 8 Septembre</td><td>Eagles VS Cowboys</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 2 -->
+   <h3>Week 2</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 11 Septembre</td><td>Chiefs VS Jets</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Septembre</td><td>Patriots VS Dolphins</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Septembre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Septembre</td><td>Bears VS Lions</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Septembre</td><td>Rams VS Seahawks</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Septembre</td><td>49ers VS Cardinals</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Septembre</td><td>Buccaneers VS Panthers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Septembre</td><td>Giants VS Eagles</td><td>À venir</td></tr>
+        <tr><td>Lundi 15 Septembre</td><td>Steelers VS Browns</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 3 -->
+  <h3>Week 3</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 18 Septembre</td><td>Packers VS Saints</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Septembre</td><td>Chiefs VS Raiders</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Septembre</td><td>Patriots VS Bills</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Septembre</td><td>Broncos VS Seahawks</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Septembre</td><td>Bengals VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Septembre</td><td>Cowboys VS Falcons</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Septembre</td><td>Giants VS Commanders</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 4 -->
+  <h3>Week 4</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 25 Septembre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Septembre</td><td>Patriots VS Dolphins</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Septembre</td><td>Rams VS Cardinals</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Septembre</td><td>Steelers VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Septembre</td><td>Raiders VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Septembre</td><td>Giants VS Eagles</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 5 -->
+  <h3>Week 5</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 2 Octobre</td><td>Chiefs VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 5 Octobre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+        <tr><td>Dimanche 5 Octobre</td><td>Bears VS Lions</td><td>À venir</td></tr>
+        <tr><td>Dimanche 5 Octobre</td><td>Ravens VS Steelers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 5 Octobre</td><td>Buccaneers VS Saints</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 6 -->
+ <h3>Week 6</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 9 Octobre</td><td>Raiders VS Chiefs</td><td>À venir</td></tr>
+        <tr><td>Dimanche 12 Octobre</td><td>Patriots VS Bengals</td><td>À venir</td></tr>
+        <tr><td>Dimanche 12 Octobre</td><td>Rams VS Seahawks</td><td>À venir</td></tr>
+        <tr><td>Dimanche 12 Octobre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+        <tr><td>Dimanche 12 Octobre</td><td>Steelers VS Browns</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 7 -->
+   <h3>Week 7</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 16 Octobre</td><td>Chiefs VS Chargers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 19 Octobre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+        <tr><td>Dimanche 19 Octobre</td><td>Bears VS Lions</td><td>À venir</td></tr>
+        <tr><td>Dimanche 19 Octobre</td><td>Rams VS Cardinals</td><td>À venir</td></tr>
+        <tr><td>Dimanche 19 Octobre</td><td>Patriots VS Dolphins</td><td>À venir</td></tr>
+        <tr><td>Dimanche 19 Octobre</td><td>Steelers VS Ravens</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 8 -->
+  <h3>Week 8</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 23 Octobre</td><td>Raiders VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 26 Octobre</td><td>Giants VS Eagles</td><td>À venir</td></tr>
+        <tr><td>Dimanche 26 Octobre</td><td>Buccaneers VS Panthers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 26 Octobre</td><td>Ravens VS Bengals</td><td>À venir</td></tr>
+        <tr><td>Dimanche 26 Octobre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 9 -->
+ <h3>Week 9</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 30 Octobre</td><td>Chiefs VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 2 Novembre</td><td>Patriots VS Bills</td><td>À venir</td></tr>
+        <tr><td>Dimanche 2 Novembre</td><td>Rams VS Seahawks</td><td>À venir</td></tr>
+        <tr><td>Dimanche 2 Novembre</td><td>Steelers VS Browns</td><td>À venir</td></tr>
+        <tr><td>Dimanche 2 Novembre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 10 -->
+  <h3>Week 10</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 6 Novembre</td><td>Raiders VS Chiefs</td><td>À venir</td></tr>
+        <tr><td>Dimanche 9 Novembre</td><td>Giants VS Cowboys</td><td>À venir</td></tr>
+        <tr><td>Dimanche 9 Novembre</td><td>Buccaneers VS Saints</td><td>À venir</td></tr>
+        <tr><td>Dimanche 9 Novembre</td><td>Bengals VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 9 Novembre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 11 -->
+ <h3>Week 11</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 13 Novembre</td><td>Chiefs VS Raiders</td><td>À venir</td></tr>
+        <tr><td>Dimanche 16 Novembre</td><td>Patriots VS Dolphins</td><td>À venir</td></tr>
+        <tr><td>Dimanche 16 Novembre</td><td>Steelers VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 16 Novembre</td><td>Rams VS Cardinals</td><td>À venir</td></tr>
+        <tr><td>Dimanche 16 Novembre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 12 -->
+ <h3>Week 12</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 20 Novembre</td><td>Raiders VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 23 Novembre</td><td>Giants VS Eagles</td><td>À venir</td></tr>
+        <tr><td>Dimanche 23 Novembre</td><td>Buccaneers VS Panthers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 23 Novembre</td><td>Bengals VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 23 Novembre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 13 -->
+    <h3>Week 13</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 27 Novembre</td><td>Chiefs VS Chargers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 30 Novembre</td><td>Patriots VS Jets</td><td>À venir</td></tr>
+        <tr><td>Dimanche 30 Novembre</td><td>Rams VS Seahawks</td><td>À venir</td></tr>
+        <tr><td>Dimanche 30 Novembre</td><td>Steelers VS Browns</td><td>À venir</td></tr>
+        <tr><td>Dimanche 30 Novembre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 14 -->
+ <h3>Week 14</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 4 Décembre</td><td>Raiders VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Décembre</td><td>Giants VS Eagles</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Décembre</td><td>Buccaneers VS Panthers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Décembre</td><td>Bengals VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 7 Décembre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 15 -->
+  <h3>Week 15</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 11 Décembre</td><td>Chiefs VS Raiders</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Décembre</td><td>Patriots VS Dolphins</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Décembre</td><td>Steelers VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Décembre</td><td>Rams VS Cardinals</td><td>À venir</td></tr>
+        <tr><td>Dimanche 14 Décembre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 16 -->
+  <h3>Week 16</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 18 Décembre</td><td>Raiders VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Décembre</td><td>Giants VS Eagles</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Décembre</td><td>Buccaneers VS Panthers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Décembre</td><td>Bengals VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 21 Décembre</td><td>Packers VS Bears</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 17 -->
+ <h3>Week 17</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 25 Décembre</td><td>Chiefs VS Broncos</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Décembre</td><td>Patriots VS Jets</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Décembre</td><td>Rams VS Seahawks</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Décembre</td><td>Steelers VS Browns</td><td>À venir</td></tr>
+        <tr><td>Dimanche 28 Décembre</td><td>Packers VS Vikings</td><td>À venir</td></tr>
+    </tbody>
+</table>
+
+  <!-- Week 18 -->
+ <h3>Week 18</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Jeudi 1 Janvier</td><td>Raiders VS Chiefs</td><td>À venir</td></tr>
+        <tr><td>Dimanche 4 Janvier</td><td>Giants VS Eagles</td><td>À venir</td></tr>
+        <tr><td>Dimanche 4 Janvier</td><td>Buccaneers VS Panthers</td><td>À venir</td></tr>
+        <tr><td>Dimanche 4 Janvier</td><td>Bengals VS Ravens</td><td>À venir</td></tr>
+        <tr><td>Dimanche 4 Janvier</td><td>Packers VS Bears</td><td>À venir</td></tr>
+    </tbody>
+</table>
+    <!-- Super Bowl 2026 -->
+    <section id="superbowl-2026">
+        <h2>Super Bowl 2026</h2>
+        <section>
+  <h2>Super Bowl 2026 — Infos essentielles</h2>
+  <p>Le Super Bowl 2026 se jouera le <strong>8 février 2026</strong> au <strong>Levi's Stadium</strong> à <strong>Santa Clara (Californie)</strong>.</p>
+  <p>Le spectacle de la mi‑temps sera assuré par <strong>Bad Bunny</strong>, le 1ᵉʳ artiste latino à être tête d’affiche en solo pour le Halftime Show.</p>
+  <p>Le match, la mi‑temps et la cérémonie pré‑match seront diffusés par NBC (et en streaming via NFL+), pour des dizaines de millions de spectateurs dans le monde.</p>
+</section>
+
+    <!-- Statistiques -->
+    <section id="statistiques">
+        <h2>Top Statistiques NFL 2025</h2>
+
+        <h3>Sacks</h3>
+        <table>
+            <thead><tr><th>Rang</th><th>Joueur</th><th>Équipe</th><th>Sacks</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Myles Garrett</td><td>Browns</td><td>19.0</td></tr>
+                <tr><td>2</td><td>Brian Burns</td><td>Giants</td><td>13.0</td></tr>
+                <tr><td>3</td><td>Micah Parsons</td><td>Packers</td><td>12.5</td></tr>
+                <tr><td>4</td><td>Danielle Hunter</td><td>Texans</td><td>11.0</td></tr>
+                <tr><td>5</td><td>Josh Sweat</td><td>Cardinals</td><td>11.0</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Autres statistiques suivent la même structure -->
+    </section><h3>Passing Yards</h3>
+        <table>
+            <thead><tr><th>Rang</th><th>Quarterback</th><th>Équipe</th><th>Yards</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Drake Maye</td><td>Patriots</td><td>3412</td></tr>
+                <tr><td>2</td><td>Dak Prescott</td><td>Cowboys</td><td>3261</td></tr>
+                <tr><td>3</td><td>Patrick Mahomes</td><td>Chiefs</td><td>3238</td></tr>
+                <tr><td>4</td><td>Matthew Stafford</td><td>Rams</td><td>3073</td></tr>
+                <tr><td>5</td><td>Daniel Jones</td><td>Colts</td><td>3041</td></tr>
+            </tbody>
+        </table>
+   <h3>Receiving Yards</h3>
+        <table>
+            <thead><tr><th>Rang</th><th>Receveur</th><th>Équipe</th><th>Yards</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Jaxon Smith-Njigba</td><td>Seahawks</td><td>1336</td></tr>
+                <tr><td>2</td><td>George Pickens</td><td>Cowboys</td><td>1142</td></tr>
+                <tr><td>3</td><td>Puka Nacua</td><td>Rams</td><td>1019</td></tr>
+                <tr><td>4</td><td>Ja'Marr Chase</td><td>Bengals</td><td>971</td></tr>
+                <tr><td>5</td><td>Amon-Ra St. Brown</td><td>Lions</td><td>884</td></tr>
+            </tbody>
+        </table>
+   <h3>Interceptions</h3>
+        <table>
+            <thead>
+                <tr><th>Rang</th><th>Joueur</th><th>Équipe</th><th>INT</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Kevin Byard III</td><td>Bears</td><td>4</td></tr>
+                <tr><td>1</td><td>Devin Lloyd</td><td>Jaguars</td><td>4</td></tr>
+                <tr><td>3</td><td>Jamel Dean</td><td>Buccaneers</td><td>3</td></tr>
+                <tr><td>3</td><td>Tremaine Edmunds</td><td>Bears</td><td>3</td></tr>
+                <tr><td>3</td><td>Jalen Pitre</td><td>Texans</td><td>3</td></tr>
+                <tr><td>3</td><td>Kerby Joseph</td><td>Lions</td><td>3</td></tr>
+                <tr><td>3</td><td>Jaycee Horn</td><td>Panthers</td><td>3</td></tr>
+                <tr><td>3</td><td>Ernest Jones IV</td><td>Seahawks</td><td>3</td></tr>
+                <tr><td>3</td><td>Jordan Battle</td><td>Bengals</td><td>3</td></tr>
+            </tbody>
+        </table>
+
+</div>
+
+<footer>
+    © 2025 Encyclopédie NFL. Tous droits réservés.
+</footer>
+
+</body>
+</html>
